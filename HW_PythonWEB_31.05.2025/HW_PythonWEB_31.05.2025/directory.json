@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Test 1",
+    "owner": "Ivanov",
+    "phone": "156888532",
+    "address": "Address first",
+    "activity": "It"
+  },
+  {
+    "name": "Test 2",
+    "owner": "Pavlov",
+    "phone": "145845",
+    "address": "Address second",
+    "activity": "Buh"
+  },
+  {
+    "name": "Test 3",
+    "owner": "Ivanov",
+    "phone": "156888532",
+    "address": "Address first",
+    "activity": "It"
+  },
+  {
+    "name": "Test 4",
+    "owner": "Pavlov",
+    "phone": "145845",
+    "address": "Address second",
+    "activity": "Buh"
+  }
+]
