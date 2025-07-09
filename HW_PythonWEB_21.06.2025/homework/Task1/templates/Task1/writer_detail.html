@@ -1,0 +1,21 @@
+{% extends "Task1/base.html" %}
+
+{% block title %}{{ writer.name }}{% endblock %}
+
+{% block content %}
+<h1>{{ writer.name }}</h1>
+<p>{{ writer.bio }}</p>
+
+<h2>Books by {{ writer.name }}</h2>
+{% if books %}
+    <ul>
+        {% for book in books %}
+            <li>
+                <a href="/writers/{{ writer_name }}/{{ book.slug }}/">{{ book.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No books available.</p>
+{% endif %}
+{% endblock %}

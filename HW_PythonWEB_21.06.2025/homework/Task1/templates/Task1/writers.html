@@ -1,0 +1,12 @@
+{% extends "Task1/base.html" %}
+
+{% block title %}Writers{% endblock %}
+
+{% block content %}
+<h1>Writers page</h1>
+<ul>
+    {% for writer in writers %}
+        <li><a href="/writers/{{ writer.slug }}/">{{ writer.name }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

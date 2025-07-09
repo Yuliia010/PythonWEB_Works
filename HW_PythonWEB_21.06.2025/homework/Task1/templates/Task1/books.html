@@ -1,0 +1,12 @@
+{% extends "Task1/base.html" %}
+
+{% block title %}Top best books{% endblock %}
+
+{% block content %}
+<h1>Top best books page</h1>
+<ul>
+    {% for book in books %}
+        <li><a href="/books/{{book.rank}}/">{{ book.title }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
