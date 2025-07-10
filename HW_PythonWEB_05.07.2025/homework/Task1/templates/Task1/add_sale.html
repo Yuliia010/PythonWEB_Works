@@ -1,0 +1,7 @@
+<h1>Зареєструвати продаж</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Зберегти</button>
+</form>
+<a href="{% url 'sale_list' %}">Назад</a>

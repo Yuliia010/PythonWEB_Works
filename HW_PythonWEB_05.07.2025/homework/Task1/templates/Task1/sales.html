@@ -1,0 +1,13 @@
+<h1>Список продажів</h1>
+<a href="{% url 'add_sale' %}">Додати покупця</a>
+<ul>
+    {% for sale in sales %}
+        <li>
+        {{ sale.sale_date }} – {{ sale.product.name }} продано {{ sale.customer.first_name }} {{ sale.customer.last_name }} 
+        продавцем {{ sale.seller.first_name }} {{ sale.seller.last_name }} за {{ sale.amount }} грн
+        </li>
+    {% empty %}
+        <li>Немає продажів.</li>
+    {% endfor %}
+</ul>
+<a href="/">Назад</a>

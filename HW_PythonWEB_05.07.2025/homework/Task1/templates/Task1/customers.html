@@ -1,0 +1,10 @@
+<h1>Список покупців</h1>
+<a href="{% url 'add_customer' %}">Додати покупця</a>
+<ul>
+    {% for customer in customers %}
+    <li>{{ customer.first_name }} {{ customer.last_name }} – {{ customer.email }} / {{ customer.phone }}</li>
+    {% empty %}
+    <li>Немає покупців.</li>
+    {% endfor %}
+</ul>
+<a href="/">Назад</a>

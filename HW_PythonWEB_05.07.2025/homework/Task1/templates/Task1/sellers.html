@@ -1,0 +1,10 @@
+<h1>Список продавців</h1>
+<a href="{% url 'add_seller' %}">Додати покупця</a>
+<ul>
+    {% for seller in sellers %}
+        <li>{{ seller.first_name }} {{ seller.last_name }} – {{ seller.get_position_display }} ({{ seller.email }})</li>
+    {% empty %}
+        <li>Немає продавців.</li>
+    {% endfor %}
+</ul>
+<a href="/">Назад</a>

@@ -1,0 +1,10 @@
+<h1>Список товарів</h1>
+<a href="{% url 'add_product' %}">Додати покупця</a>
+<ul>
+    {% for product in products %}
+        <li><strong>{{ product.name }}</strong>: {{ product.description }}</li>
+    {% empty %}
+        <li>Немає товарів.</li>
+    {% endfor %}
+</ul>
+<a href="/">Назад</a>
