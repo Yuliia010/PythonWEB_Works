@@ -1,0 +1,7 @@
+<h1>Видалити ресторан "{{ restaurant.name }}"?</h1>
+
+<form method="post">
+  {% csrf_token %}
+  <button type="submit">Підтвердити видалення</button>
+  <a href="{% url 'restaurant_list' %}">Відмінити</a>
+</form>
